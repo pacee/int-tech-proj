@@ -10,3 +10,12 @@ d:\dokumentumok\visual studio 2015\Projects\doitcar\doitcar\obj\Debug\doitcar.pd
 D:\Dokumentumok\VS-GIT\int-rsz-doitcar\doitcar\doitcar\bin\Debug\doitcar.exe.config
 D:\Dokumentumok\VS-GIT\int-rsz-doitcar\doitcar\doitcar\obj\Debug\doitcar.exe
 D:\Dokumentumok\VS-GIT\int-rsz-doitcar\doitcar\doitcar\obj\Debug\doitcar.pdb
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\bin\Debug\doitcar.exe.config
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\obj\Debug\doitcar.exe
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\obj\Debug\doitcar.pdb
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\bin\Debug\doitcar.exe
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\bin\Debug\doitcar.pdb
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\obj\Debug\doitcar.csprojResolveAssemblyReference.cache
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\obj\Debug\doitcar.Form1.resources
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\obj\Debug\doitcar.Properties.Resources.resources
+D:\Dokumentumok\GIT\int-tech-proj\doitcar\obj\Debug\doitcar.csproj.GenerateResource.Cache
