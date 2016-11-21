@@ -47,6 +47,9 @@
             this.btnGO = new System.Windows.Forms.Button();
             this.btnDisconnect = new System.Windows.Forms.Button();
             this.chkRoute = new System.Windows.Forms.CheckBox();
+            this.numSeconds = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -192,11 +195,11 @@
             // 
             // txtbRoute
             // 
-            this.txtbRoute.Location = new System.Drawing.Point(185, 48);
+            this.txtbRoute.Location = new System.Drawing.Point(185, 65);
             this.txtbRoute.Multiline = true;
             this.txtbRoute.Name = "txtbRoute";
             this.txtbRoute.ReadOnly = true;
-            this.txtbRoute.Size = new System.Drawing.Size(125, 237);
+            this.txtbRoute.Size = new System.Drawing.Size(236, 220);
             this.txtbRoute.TabIndex = 21;
             // 
             // btnGO
@@ -229,11 +232,34 @@
             this.chkRoute.Text = "Define route";
             this.chkRoute.UseVisualStyleBackColor = true;
             // 
+            // numSeconds
+            // 
+            this.numSeconds.Location = new System.Drawing.Point(185, 39);
+            this.numSeconds.Name = "numSeconds";
+            this.numSeconds.Size = new System.Drawing.Size(46, 20);
+            this.numSeconds.TabIndex = 25;
+            this.numSeconds.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(237, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Seconds";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 322);
+            this.ClientSize = new System.Drawing.Size(443, 322);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.numSeconds);
             this.Controls.Add(this.chkRoute);
             this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.btnGO);
@@ -257,6 +283,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,6 +310,8 @@
         private System.Windows.Forms.Button btnGO;
         private System.Windows.Forms.Button btnDisconnect;
         private System.Windows.Forms.CheckBox chkRoute;
+        private System.Windows.Forms.NumericUpDown numSeconds;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -24,7 +24,7 @@ namespace doitcar{
         private NetworkStream stream;
         private InstructionCollection collection;
         private List<Instruction> instructions;
-        private List<int> route = new List<int>();
+        private List<RoutePart> route = new List<RoutePart>();
 
         private void Form1_Load(object sender, EventArgs e){
             txtIP.Text = "192.168.1.1";
@@ -73,14 +73,16 @@ namespace doitcar{
         //Útvonal utasítások listába rakása
         private void defineRoute(int n){
             Instruction selected = instructions[n];
-            this.txtbRoute.AppendText(selected.commDesc + "\n");
-            this.route.Add(selected.commNumber);
+            int time = Convert.ToInt32(numSeconds.Value);
+            this.txtbRoute.AppendText(selected.commDesc + " for " + time.ToString() + " second(s)\n");
+            this.route.Add(new RoutePart(selected.commNumber, time));
         }
 
         //Útvonal lista elemeinek elküldése
-        private void btnGO_Click(object sender, EventArgs e){
+        private async void btnGO_Click(object sender, EventArgs e){
             foreach (var item in this.route){
-                sendCommand(item);
+                sendCommand(item.commNumber);
+                await Task.Delay(item.seconds * 1000);
             }
             this.route.Clear();
         }
