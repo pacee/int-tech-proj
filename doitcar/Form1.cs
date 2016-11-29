@@ -84,6 +84,7 @@ namespace doitcar{
                 sendCommand(item.commNumber);
                 await Task.Delay(item.seconds * 1000);
             }
+            sendCommand(0); //megállás a végrehajtás legvégén.
             this.route.Clear();
         }
 
